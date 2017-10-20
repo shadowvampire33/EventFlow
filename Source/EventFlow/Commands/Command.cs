@@ -51,6 +51,7 @@ namespace EventFlow.Commands
 
         public Task<ISourceId> PublishAsync(ICommandBus commandBus, CancellationToken cancellationToken)
         {
+            System.Console.Write("Hello");
             return commandBus.PublishAsync(this, cancellationToken);
         }
 
